@@ -46,7 +46,7 @@ enum Action {
 
 async fn get_users(base_url: String, api_key: String) -> u64 {
     let response = reqwest::Client::new()
-        .get(&format!("{}api/v3/core/users", base_url))
+        .get(&format!("{}api/v3/core/users/", base_url))
         .header("Authorization", "Bearer ".to_owned() + api_key.as_str())
         .send()
         .await
