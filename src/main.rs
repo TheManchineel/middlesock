@@ -40,7 +40,7 @@ struct Cords {
 enum Action {
     #[allow(non_camel_case_types)] // this matches the query parameter
     login,
-    #[allow(non_camel_case_types)] // see above
+    #[allow(non_camel_case_types)]
     login_failed,
 }
 
